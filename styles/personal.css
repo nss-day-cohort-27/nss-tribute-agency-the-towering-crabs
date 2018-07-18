@@ -1,0 +1,17 @@
+.person-body{
+background-image: url('../images/flowersPersonal.jpg')
+}
+
+.card{
+margin: 2px;
+
+    
+}
+
+.row{
+    justify-content: space-evenly;
+}
+.nav-item {
+    padding-left: 10%;
+    padding-right: 10%;
+}
