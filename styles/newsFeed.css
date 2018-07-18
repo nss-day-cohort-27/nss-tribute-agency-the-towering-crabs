@@ -1,0 +1,8 @@
+body {
+    background-image: url("../images/flowers-2.jpg");
+}
+
+.main-container {
+    background-color: rgba(255, 255, 255, 0.699);
+    height: 100%;
+}
