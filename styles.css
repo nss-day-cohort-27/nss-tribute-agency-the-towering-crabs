@@ -1,0 +1,50 @@
+
+.nav-item {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+#main-article {
+    float: center;
+}
+
+.collab-list {
+    text-align: center;
+    list-style-type: none;
+    font-size: 15px;
+}
+.front-pic {
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url(../images/campbell-s-soup-can-beef.jpg!PinterestSmall.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.residence {
+    text-align: center;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+/* ID
+main-article
+
+lass Names
+title
+collab-list
+collab-list-items
+front-pic
+residence */
