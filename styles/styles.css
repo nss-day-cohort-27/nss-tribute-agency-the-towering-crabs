@@ -1,0 +1,13 @@
+body{
+background-image: url('../images/flowersPersonal.jpg')
+}
+
+.card{
+margin: 2px;
+
+    
+}
+
+.row{
+    justify-content: center;
+}
