@@ -9,5 +9,5 @@ margin: 2px;
 }
 
 .row{
-    justify-content: center;
+    justify-content: space-evenly;
 }
