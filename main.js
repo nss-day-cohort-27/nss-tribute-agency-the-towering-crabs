@@ -40,6 +40,15 @@ title.appendChild(residence)
 
 fragment.appendChild(portrait)
 
+// ID
+// main-article
+
+//Class Names
+// title
+// collab-list
+// collab-list-items
+// front-pic
+// residence
 
 
 collab.appendChild(collabListItem1)
