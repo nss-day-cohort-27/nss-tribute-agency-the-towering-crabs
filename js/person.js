@@ -9,14 +9,22 @@ familyTreeDatabase.offspring = []
 
 // create objects and values
 const mother = {
+<<<<<<< HEAD
     name: "Júlia Justína Zavacká",
     born: 'November 20, 1891',
     died: 'November 22, 1972',
     country: 'Miková, Austria-Hungary',
+=======
+    name: "Judy",
+    born: born,
+    died: died,
+    country: ""
+>>>>>>> master
     
 }
 
 const father = {
+<<<<<<< HEAD
     name: "Andrej Warhola",
     born: '1889',
     died: '1942',
@@ -44,15 +52,38 @@ const brother2 = {
     died: 'January 30, 2014',
     country:'Slovakia',
     
+=======
+    "name": "Judy",
+    "born": born,
+    "died": died,
+    "country":'',
+        "about":""
+}
+
+const brother = {
+    "name": "Judy",
+    "born": born,
+    "died": died,
+    "country":'',
+        "about":'',
+>>>>>>> master
 }
 
 
 const nephew = {
+<<<<<<< HEAD
     name: 'James Warhola',
     born: 'March 16, 1955',
     died: 'still living',
     country:'United States, Smock, Pennsylvania, PA'
     
+=======
+    "name": "Judy",
+    "born": born,
+    "died": died,
+    "country":'',
+        "about":''
+>>>>>>> master
 }
 // Push objects/arrays into database
 familyTreeDatabase.parents.push(mother, father)
