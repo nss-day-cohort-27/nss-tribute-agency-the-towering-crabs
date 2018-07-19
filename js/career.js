@@ -1,24 +1,7 @@
+const newArray = [1,2,3,4,5]
 
-const fragment = document.createDocumentFragment()
-const main = document.querySelector("#main-article")
+localStorage.setItem("numberArray", newArray)
 
-const title = document.createElement("header")
-title.classList = "title"
-title.textContent = "Andy Warhol"
+const localStorageArray=localStorage.getItem("numberArray")
 
-const collab = document.createElement("ul")
-collab.textContent = "Collaborators:"
-collab.classList = "collab-list"
-
-const collabListItem1 = document.createElement("li")
-collabListItem1.classList = "collab-list-items"
-collabListItem1.textContent = "The Velvet Underground"
-
-
-
-collab.appendChild(collabListItem1)
-
-title.appendChild(collab)
-fragment.appendChild(title)
-
-main.appendChild(fragment)
+console.log(localStorageArray)
