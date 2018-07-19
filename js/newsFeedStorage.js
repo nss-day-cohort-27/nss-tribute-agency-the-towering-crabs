@@ -40,7 +40,7 @@ creatingCollab("Lou Reed", "../images/louReed.jpg");
 creatingCollab("William S. Burroughs", "../images/burroughs.jpg");
 creatingCollab("Keith Haring", "../images/keithHaring.jpg");
 
-function creatingEvent (event, location, date, type, url, eventTypeURL) {
+function creatingEvent (event, location, date, type, url, eventTypeURL, className) {
     const newObject = {};
     newObject.event = event;
     newObject.location = location;
@@ -48,12 +48,13 @@ function creatingEvent (event, location, date, type, url, eventTypeURL) {
     newObject.type = type;
     newObject.url = url;
     newObject.eventTypeURL = eventTypeURL;
+    newObject.className = className;
     newsFeedInventory.event.push(newObject);
 }
 
-creatingEvent("Velvet Underground Concert", "Greenwich Village", "October 02, 1971", "Concert", "../images/velvetUnderground.jpg", "../images/concert.jpg");
-creatingEvent("Dinner at Dorsia", "Upper West Side", "February 19, 1976", "Dinner", "../images/upperWest.jpg", "../images/dinner.jpg");
-creatingEvent("Opening of Pop Art Studio", "Los Angeles", "May 01, 1981", "Art Show", "../images/la.jpg", "../images/artShow.jpg");
+creatingEvent("Velvet Underground Concert", "Greenwich Village", "October 02, 1971", "Concert", "../images/velvetUnderground.jpg", "../images/concert.jpg", "velvet");
+creatingEvent("Dinner at Dorsia", "Upper West Side", "February 19, 1976", "Dinner", "../images/upperWest.jpg", "../images/dinner.jpg", "dorsia");
+creatingEvent("Opening of Pop Art Studio", "Los Angeles", "May 01, 1981", "Art Show", "../images/la.jpg", "../images/artShow.jpg", "pop");
 
 
 console.log(newsFeedInventory)

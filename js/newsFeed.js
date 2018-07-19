@@ -9,11 +9,17 @@ loadDataBase("af-newsFeedInventory");
 
 //////// Populating the page with Data
 
+// const randomBanana () {
+
+// }
+
+
+
 ///creating the cards 
 
 function creatingLocationCard(array) {
     const emptyCard = `<div class="card">
-                        <img class="card-img-top img-thumbnail" src="${array.url}" alt="${array.name}">
+                        <img class="card-img-top img-thumbnail" src="${array.url}" alt="${array.location}">
                         <div class="card-body">
                             <h5 class="card-title">${array.location}</h5>
                             <p class="card-text">${array.date}</p>
@@ -22,7 +28,7 @@ function creatingLocationCard(array) {
 }
 
 function creatingEventTypeCard(array) {
-    const emptyCard = `<div class="card"><img src="${array.eventTypeURL}" alt="Art Show"
+    const emptyCard = `<div class="card"><img src="${array.eventTypeURL}" alt="${array.type}"
     class="img-thumbnail eventType"><div class="card-body"><h5>${array.type}</h5></div></div>`
     return emptyCard
 }
@@ -36,7 +42,7 @@ function creatingCollabCard (array) {
 function makingMainCard (function1, function2, function3, array) {
     let emptyMainCard = `
                         <div class="card-header"><h4>${array.event}</h4></div>
-                        <div class="card-body" id="main-card-body1">
+                        <div class="card-body main-card-body1 ${array.className}">
                             <div class="card-deck">
                             ${function1}${function2}${function3}</div></div>`;
     return emptyMainCard
