@@ -30,15 +30,17 @@ body {
 
 
 
-#main-card-body1 {
-    background-image: url("../images/marylin-gray.jpg");
-    border-radius: 15px;
-}
+
 
 .card-body {
     background-color: rgba(128, 128, 128, 0.459);
 }
 
+
+#main-card-body1 {
+    background-image: url("../images/marylin-gray.jpg");
+    border-radius: 15px;
+}
 
 
 
