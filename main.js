@@ -1,7 +1,11 @@
-const fragment = document.createDocumentFragment()
-const main = document.querySelector("#main-article")
 
-const title = document.createElement("header")
+const main = document.querySelector(".card")
+const cardInfo = document.querySelector(".card-text")
+const cardTitle = document.querySelector(".card-title")
+
+
+
+const title = document.createElement("h5")
 title.classList = "title"
 title.textContent = "Andy Warhol"
 
@@ -34,11 +38,11 @@ const residence = document.createElement("article")
 residence.classList = "residence"
 residence.textContent = "Resided in New York City, NY, U.S."
 
-
+cardTitle.appendChild(title)
 title.appendChild(residence)
 
 
-fragment.appendChild(portrait)
+cardTitle.appendChild(portrait)
 
 // ID
 // main-article
@@ -58,8 +62,8 @@ collab.appendChild(collabListItem4)
 
 
 
-title.appendChild(collab)
-fragment.appendChild(title)
+cardInfo.appendChild(collab)
+
 
 main.appendChild(fragment)
 
