@@ -1,5 +1,10 @@
 .person-body{
-background-image: url('../images/flowersPersonal.jpg')
+background-image: url('../images/flowersPersonal.jpg');
+}
+
+.body-background{
+    background-color: rgba(255, 255, 255, 0.461);
+    height: 100%;
 }
 
 .person-header{
