@@ -4,54 +4,54 @@ const familyTreeDatabase = {}
 
 const mother = {
     name: "Judy",
-    // born: born,
-    // died: died,
-    // country: 'europe'
+    born: born,
+    died: died,
+    country: 
     
 }
 
-// const father = {
-//     "name": "Judy",
-//     "born": born,
-//     "died": died,
-//     "country":
-//         "about":
-// }
+const father = {
+    "name": "Judy",
+    "born": born,
+    "died": died,
+    "country":
+        "about":
+}
 
-// const brother = {
-//     "name": "Judy",
-//     "born": born,
-//     "died": died,
-//     "country":
-//         "about":
-// }
+const brother = {
+    "name": "Judy",
+    "born": born,
+    "died": died,
+    "country":
+        "about":
+}
 
-// const children = {
-//     "name": "Judy",
-//     "born": born,
-//     "died": died,
-//     "country":
-//         "about":
-// }
+const nephew = {
+    "name": "Judy",
+    "born": born,
+    "died": died,
+    "country":
+        "about":
+}
 
-// familyTreeDatabase.parents[mother, father]
-// familyTreeDatabase.siblings[brother]
-// familyTreeDatabase.offspring[children]
+familyTreeDatabase.parents[mother, father]
+familyTreeDatabase.siblings[brother]
+familyTreeDatabase.offspring[nephew]
 
-// const saveDatabase = function (databaseObject, localStorageKey) {
-//     /*
-//         Convert the Object into a string.
-//     */
-//     const stringifiedDatabase = JSON.stringify(databaseObject)
+const saveDatabase = function (databaseObject, localStorageKey) {
+    /*
+        Convert the Object into a string.
+    */
+    const stringifiedDatabase = JSON.stringify(databaseObject)
 
-//     /*
-//         Create a key in local storage, and store the string
-//         version of your inventory database as the value
-//     */
-//     localStorage.setItem(localStorageKey, stringifiedDatabase)
-// }
+    /*
+        Create a key in local storage, and store the string
+        version of your inventory database as the value
+    */
+    localStorage.setItem(localStorageKey, stringifiedDatabase)
+}
 
-// saveDatabase(familyTreeDatabase, 'FamilyTree')
+saveDatabase(familyTreeDatabase, 'FamilyTree')
 
 // // CALL ME! Calls whats in localStorage...in browser.
 // const loadDatabase = function (localStorageKey) {

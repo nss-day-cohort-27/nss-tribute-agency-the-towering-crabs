@@ -2,11 +2,28 @@
 background-image: url('../images/flowersPersonal.jpg')
 }
 
+.person-header{
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+.person-header-container{
+    background-color:rgba(235, 75, 31, 0.495);
+}
+
 .card{
 margin: 2px;
-
-    
 }
+
+
+/* .card-text{
+    list-style: bullets;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+} */
+
+
 
 .row{
     justify-content: space-evenly;
