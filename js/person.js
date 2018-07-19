@@ -6,7 +6,7 @@ const mother = {
     name: "Judy",
     born: born,
     died: died,
-    country: 
+    country: ""
     
 }
 
@@ -14,24 +14,24 @@ const father = {
     "name": "Judy",
     "born": born,
     "died": died,
-    "country":
-        "about":
+    "country":'',
+        "about":""
 }
 
 const brother = {
     "name": "Judy",
     "born": born,
     "died": died,
-    "country":
-        "about":
+    "country":'',
+        "about":'',
 }
 
 const nephew = {
     "name": "Judy",
     "born": born,
     "died": died,
-    "country":
-        "about":
+    "country":'',
+        "about":''
 }
 
 familyTreeDatabase.parents[mother, father]
