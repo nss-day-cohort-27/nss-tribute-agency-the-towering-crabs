@@ -9,7 +9,8 @@ newsFeedInventory.event = [];
 ///// Primary Card Data
 
 const basquiat = {
-    name: "Jean-Michel Basquiat"
+    name: "Jean-Michel Basquiat",
+    url: "../images/Basquiat.jpg"
 }
 
 
@@ -17,7 +18,8 @@ const SanFranArtShow = {
     event: "San Franciso Art Show",
     location: "San Francisco",
     date: "June 12, 1966",
-    type: "Art Show"
+    type: "Art Show",
+    url: "../images/sanFran.jpg"
 }
 
 newsFeedInventory.collaborators.push(basquiat);
@@ -26,22 +28,24 @@ newsFeedInventory.event.push(SanFranArtShow);
 
 /////functions for creating objects 
 
-function creatingCollab (name) {
+function creatingCollab (name, url) {
     const newObject = {};
     newObject.name = name;
+    newObject.url = url;
     newsFeedInventory.collaborators.push(newObject);
 }
 
-creatingCollab("Lou Reed");
+creatingCollab("Lou Reed", "../images/keithHaring.jpg");
 creatingCollab("William S. Burroughs");
 creatingCollab("Keith Haring");
 
-function creatingEvent (event, location, date, type) {
+function creatingEvent (event, location, date, type, url) {
     const newObject = {};
     newObject.event = event;
     newObject.location = location;
     newObject.date = date;
     newObject.type = type;
+    newObject.url = url;
     newsFeedInventory.event.push(newObject);
 }
 
