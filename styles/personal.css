@@ -20,8 +20,13 @@ background-image: url('../images/flowersPersonal.jpg');
 
 .card{
 margin: 2px;
-text-align: center;
+max-width: 80%;
 
+}
+
+.card-text{
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 

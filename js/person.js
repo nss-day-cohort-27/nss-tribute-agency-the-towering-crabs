@@ -1,11 +1,14 @@
 console.log('yerrrrr');
 // Make new database for local storage
+
+
 const familyTreeDatabase = {};
 
 // create arrays for objects
 familyTreeDatabase.parents = [];
+familyTreeDatabase.him = [];
 familyTreeDatabase.siblings = [];
-familyTreeDatabase.offspring = []
+familyTreeDatabase.offspring = [];
 
 // create objects and values
 const mother = {
@@ -56,6 +59,7 @@ const nephew = {
 }
 // Push objects/arrays into database
 familyTreeDatabase.parents.push(mother, father)
+familyTreeDatabase.him.push(andy)
 familyTreeDatabase.siblings.push(brother, brother2)
 familyTreeDatabase.offspring.push(nephew)
 console.log(familyTreeDatabase.parents);
