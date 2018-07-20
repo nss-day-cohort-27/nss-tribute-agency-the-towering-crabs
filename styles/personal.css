@@ -3,15 +3,15 @@ background-image: url('../images/flowersPersonal.jpg');
 }
 
 .body-background{
-    background-color: rgba(255, 255, 255, 0.461);
+    background-color: rgba(255, 255, 255, 0.699);
     height: 100%;
 }
 
 .person-header{
     text-align: center;
     font-family: 'Yellowtail', cursive;
-    font-size: 70px;
-    color: whitesmoke;
+    font-size: 85px;
+    color: rgba(223, 113, 175, 0.756);
 }
 
 .person-header-container{
@@ -19,9 +19,23 @@ background-image: url('../images/flowersPersonal.jpg');
 }
 
 .card{
-margin: 2px;
-text-align: center;
+margin: 4px;
+max-width: 100%;
+justify-items: auto;
 
+}
+
+
+.row{
+    margin: 2px;
+    max-width: 100%;
+    justify-content: space-around;
+    
+}
+
+.card-text{
+    text-align: justify;
+    word-wrap: break-word;
 }
 
 
