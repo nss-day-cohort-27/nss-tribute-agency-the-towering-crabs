@@ -1,7 +1,6 @@
 console.log('yerrrrr');
 // Make new database for local storage
 
-
 const familyTreeDatabase = {};
 
 // create arrays for objects
@@ -53,7 +52,7 @@ const brother2 = {
 const nephew = {
     name: 'James Warhola',
     born: 'March 16, 1955',
-    died: 'still living',
+    died: 'Still Living',
     country:'United States, Smock, Pennsylvania, PA'
     
 }
@@ -82,15 +81,3 @@ saveDatabase(familyTreeDatabase, 'FamilyTree')
 
 
 const homeStorage = JSON.parse(localStorage.getItem("FamilyTree"))
-
-// // CALL ME! Calls whats in localStorage...in browser.
-// const loadDatabase = function (localStorageKey) {
-//     // Get the string version of the database
-//     const databaseString = localStorage.getItem(localStorageKey)
-
-//     // Use JSON.parse() to convert the string back into an object
-//     return JSON.parse(databaseString)
-// }
-// // Invoking function and also printing in console.
-// console.log(loadDatabase('FamilyTree'))
-

@@ -10,7 +10,7 @@ function creatingMomCard (array) {
     const emptyCard = `<div class="card col-3">
     <img class="card-img-top" src="../images/Mom.jpg" alt="Julia Warhola">
     <div class="card-body">
-      <h5 class="card-title">Julia Warhola</h5>
+      <h5 class="card-title">Andy's Mother</h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
@@ -24,9 +24,9 @@ function creatingMomCard (array) {
 
 function creatingDadCard (array) {
     const emptyCard = `<div class="card col-3">
-    <img class="card-img-top" src="../images/dad.JPG" alt="Andrej Warhola">
+    <img class="card-img-top" src="../images/fakedad.JPG" alt="Andrej Warhola">
     <div class="card-body">
-      <h5 class="card-title">Andrej Warhola</h5>
+      <h5 class="card-title">Andy's Father</h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
@@ -43,7 +43,7 @@ function creatingAndyCard (array) {
   const emptyCard = ` <div class="card col-3">
   <img class="card-img-top" src="../images/lilandy2.jpg" alt="Andy Warhol">
   <div class="card-body">
-    <h5 class="card-title">Andy Warhola</h5>
+    <h5 class="card-title">Andy</h5>
     <p class="card-text"> ${array.name}</p>
     <p class="card-text"> ${array.born}</p>
     <p class="card-text"> ${array.died}</p>
@@ -59,9 +59,9 @@ function creatingAndyCard (array) {
 
 function creatingJohnCard (array) {
     const emptyCard = `<div class="card col-3">
-    <img class="card-img-top" src="../images/johnW.gif" alt="John Warhola">
+    <img class="card-img-top" src="../images/rsz_man.jpg" alt="John Warhola">
     <div class="card-body">
-      <h5 class="card-title">John Warhola</h5>
+      <h5 class="card-title">Andy's Other Brother</h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
@@ -75,9 +75,9 @@ function creatingJohnCard (array) {
 
 function creatingPavolCard (array) {
   const emptyCard = `<div class="card col-3">
-  <img class="card-img-top" src="../images/skull2.jpg" alt="John Warhola">
+  <img class="card-img-top" src="../images/rsz_skull2.jpg" alt="John Warhola">
   <div class="card-body">
-    <h5 class="card-title">Pavol Warhola</h5>
+    <h5 class="card-title">Andy's Brother</h5>
     <p class="card-text"> ${array.name}</p>
     <p class="card-text"> ${array.born}</p>
     <p class="card-text"> ${array.died}</p>
@@ -91,9 +91,9 @@ function creatingPavolCard (array) {
 
 function creatingNephewCard (array) {
     const emptyCard = `<div class="card col-3">
-    <img class="card-img-top" src="../images/james2.jpg" alt="James Warhola">
+    <img class="card-img-top" src="../images/rsz_james2.jpg" alt="James Warhola">
     <div class="card-body">
-      <h5 class="card-title">James Warhola</h5>
+      <h5 class="card-title">Andy's Nephew</h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
@@ -122,12 +122,14 @@ getmom.innerHTML = creatingMomCard(familyTreeDatabase.parents[0]);
 const getdad = document.querySelector('#dad');
 getdad.innerHTML = (creatingDadCard(familyTreeDatabase.parents[1]));
 
-// const getandy = document.querySelector('#andy');
-// getandy.innerHTML = creatingAndyCard(familyTreeDatabase.him[0]);
+const getandy = document.querySelector('#andy');
+getandy.innerHTML = creatingAndyCard(familyTreeDatabase.him[0]);
 
-// const getjohn = document.querySelector('#john');
-// getjohn.innerHTML = creatingJohnCard(familyTreeDatabase.siblings[0]);
+const getjohn = document.querySelector('#john');
+getjohn.innerHTML = creatingJohnCard(familyTreeDatabase.siblings[0]);
 
-// const getpavol = document.querySelector('#pavol');
-// getpavol.innerHTML = creatingPavolCard(familyTreeDatabase.siblings[1]);
+const getpavol = document.querySelector('#pavol');
+getpavol.innerHTML = creatingPavolCard(familyTreeDatabase.siblings[1]);
 
+const getjames = document.querySelector('#james');
+getjames.innerHTML = creatingNephewCard(familyTreeDatabase.offspring[0]);
