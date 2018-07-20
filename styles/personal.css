@@ -40,10 +40,13 @@ justify-items: auto;
 .card-text{
     text-align: justify;
     word-wrap: break-word;
+    font-family: 'Bellefair', serif;
+    font-size: 20px;
 }
 
 .card-title{
     font-size: 24px;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
 .card-body{
