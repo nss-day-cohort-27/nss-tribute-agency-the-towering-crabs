@@ -9,7 +9,8 @@ newsFeedInventory.event = [];
 ///// Primary Card Data
 
 const basquiat = {
-    name: "Jean-Michel Basquiat"
+    name: "Jean-Michel Basquiat",
+    url: "../images/Basquiat.jpg"
 }
 
 
@@ -17,7 +18,9 @@ const SanFranArtShow = {
     event: "San Franciso Art Show",
     location: "San Francisco",
     date: "June 12, 1966",
-    type: "Art Show"
+    type: "Art Show",
+    url: "../images/sanFran.jpg",
+    eventTypeURL: "../images/artShow.jpg"
 }
 
 newsFeedInventory.collaborators.push(basquiat);
@@ -26,28 +29,32 @@ newsFeedInventory.event.push(SanFranArtShow);
 
 /////functions for creating objects 
 
-function creatingCollab (name) {
+function creatingCollab (name, url) {
     const newObject = {};
     newObject.name = name;
+    newObject.url = url;
     newsFeedInventory.collaborators.push(newObject);
 }
 
-creatingCollab("Lou Reed");
-creatingCollab("William S. Burroughs");
-creatingCollab("Keith Haring");
+creatingCollab("Lou Reed", "../images/louReed.jpg");
+creatingCollab("William S. Burroughs", "../images/burroughs.jpg");
+creatingCollab("Keith Haring", "../images/keithHaring.jpg");
 
-function creatingEvent (event, location, date, type) {
+function creatingEvent (event, location, date, type, url, eventTypeURL, className) {
     const newObject = {};
     newObject.event = event;
     newObject.location = location;
     newObject.date = date;
     newObject.type = type;
+    newObject.url = url;
+    newObject.eventTypeURL = eventTypeURL;
+    newObject.className = className;
     newsFeedInventory.event.push(newObject);
 }
 
-creatingEvent("Velvet Underground Concert", "Greenwich Village", "October 02, 1971", "Concert");
-creatingEvent("Dinner at Dorsia", "Upper West Side", "February 19, 1976", "Dinner");
-creatingEvent("Opening of Pop Art Studio", "Los Angeles", "May 01, 1981", "Art Show");
+creatingEvent("Velvet Underground Concert", "Greenwich Village", "October 02, 1971", "Concert", "../images/velvetUnderground.jpg", "../images/concert.jpg", "velvet");
+creatingEvent("Dinner at Dorsia", "Upper West Side", "February 19, 1976", "Dinner", "../images/upperWest.jpg", "../images/dinner.jpg", "dorsia");
+creatingEvent("Opening of Pop Art Studio", "Los Angeles", "May 01, 1981", "Art Show", "../images/la.jpg", "../images/artShow.jpg", "pop");
 
 
 console.log(newsFeedInventory)

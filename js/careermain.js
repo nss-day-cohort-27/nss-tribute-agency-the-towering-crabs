@@ -9,7 +9,6 @@ function getLocalStorage(nameTag) {
 // in the developer tools
 getLocalStorage("careerInventory");
 
-
 // Text for Velvet Underground card
 const velvetCard=document.querySelector(".velvet-card")
 const velvetCardText=document.createElement("p")
@@ -67,3 +66,7 @@ const adcCardText=document.createElement("p")
 adcCardText.textContent="In 1951, he won his first ADC Award for a CBS record illustration. The work for I. Miller, Harper’s Bazaar, and Noonday Press won him additional ADC awards. The ADC Awards is the oldest continuously running industry award show in the world."
 
 adcCard.appendChild(adcCardText)
+
+function createBackground() {
+    
+}

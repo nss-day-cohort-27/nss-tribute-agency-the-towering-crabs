@@ -1,42 +1,65 @@
 console.log('yerrrrr');
+// Make new database for local storage
+const familyTreeDatabase = {};
 
-const familyTreeDatabase = {}
+// create arrays for objects
+familyTreeDatabase.parents = [];
+familyTreeDatabase.siblings = [];
+familyTreeDatabase.offspring = []
 
+// create objects and values
 const mother = {
-    name: "Judy",
-    born: born,
-    died: died,
-    country: ""
+    name: "Júlia Justína Zavacká",
+    born: 'November 20, 1891',
+    died: 'November 22, 1972',
+    country: 'Miková, Austria-Hungary',
     
 }
 
 const father = {
-    "name": "Judy",
-    "born": born,
-    "died": died,
-    "country":'',
-        "about":""
+    name: "Andrej Warhola",
+    born: '1889',
+    died: '1942',
+    country:'Slovakia',
+}
+
+const andy = {
+    name: "Andrew Warhola",
+    born: 'August 6, 1928',
+    died: 'February 22, 1987',
+    country:'United States, Pittsburgh, PA',
 }
 
 const brother = {
-    "name": "Judy",
-    "born": born,
-    "died": died,
-    "country":'',
-        "about":'',
+    name: "John Warhola",
+    born: 'May 31, 1925',
+    died: 'December 24, 2010',
+    country:'United States, Pittsburg, PA',
+    
 }
+
+const brother2 = {
+    name: "Pavol Warhola",
+    born: 'June 26, 1922',
+    died: 'January 30, 2014',
+    country:'Slovakia',
+    
+}
+
 
 const nephew = {
-    "name": "Judy",
-    "born": born,
-    "died": died,
-    "country":'',
-        "about":''
+    name: 'James Warhola',
+    born: 'March 16, 1955',
+    died: 'still living',
+    country:'United States, Smock, Pennsylvania, PA'
+    
 }
+// Push objects/arrays into database
+familyTreeDatabase.parents.push(mother, father)
+familyTreeDatabase.siblings.push(brother, brother2)
+familyTreeDatabase.offspring.push(nephew)
+console.log(familyTreeDatabase.parents);
 
-familyTreeDatabase.parents[mother, father]
-familyTreeDatabase.siblings[brother]
-familyTreeDatabase.offspring[nephew]
 
 const saveDatabase = function (databaseObject, localStorageKey) {
     /*
@@ -53,6 +76,9 @@ const saveDatabase = function (databaseObject, localStorageKey) {
 
 saveDatabase(familyTreeDatabase, 'FamilyTree')
 
+
+const homeStorage = JSON.parse(localStorage.getItem("FamilyTree"))
+
 // // CALL ME! Calls whats in localStorage...in browser.
 // const loadDatabase = function (localStorageKey) {
 //     // Get the string version of the database
@@ -63,3 +89,4 @@ saveDatabase(familyTreeDatabase, 'FamilyTree')
 // }
 // // Invoking function and also printing in console.
 // console.log(loadDatabase('FamilyTree'))
+
