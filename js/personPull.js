@@ -10,7 +10,7 @@ function creatingMomCard (array) {
     const emptyCard = `<div class="card col-3">
     <img class="card-img-top" src="../images/Mom.jpg" alt="Julia Warhola">
     <div class="card-body">
-      <h5 class="card-title">Andy's Mother</h5>
+      <h5 class="card-title"><em><strong>Andy's Mother</strong></em></h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
@@ -26,7 +26,7 @@ function creatingDadCard (array) {
     const emptyCard = `<div class="card col-3">
     <img class="card-img-top" src="../images/fakedad.JPG" alt="Andrej Warhola">
     <div class="card-body">
-      <h5 class="card-title">Andy's Father</h5>
+      <h5 class="card-title"><em><strong>Andy's Father</strong></em></h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
@@ -43,7 +43,7 @@ function creatingAndyCard (array) {
   const emptyCard = ` <div class="card col-3">
   <img class="card-img-top" src="../images/lilandy2.jpg" alt="Andy Warhol">
   <div class="card-body">
-    <h5 class="card-title">Andy</h5>
+    <h5 class="card-title"><em><strong>Andy</strong></em></h5>
     <p class="card-text"> ${array.name}</p>
     <p class="card-text"> ${array.born}</p>
     <p class="card-text"> ${array.died}</p>
@@ -61,7 +61,7 @@ function creatingJohnCard (array) {
     const emptyCard = `<div class="card col-3">
     <img class="card-img-top" src="../images/rsz_man.jpg" alt="John Warhola">
     <div class="card-body">
-      <h5 class="card-title">Andy's Other Brother</h5>
+      <h5 class="card-title"><em><strong>Andy's Other Brother</strong></em></h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
@@ -77,7 +77,7 @@ function creatingPavolCard (array) {
   const emptyCard = `<div class="card col-3">
   <img class="card-img-top" src="../images/rsz_skull2.jpg" alt="John Warhola">
   <div class="card-body">
-    <h5 class="card-title">Andy's Brother</h5>
+    <h5 class="card-title"><em><strong>Andy's Brother</strong></em></h5>
     <p class="card-text"> ${array.name}</p>
     <p class="card-text"> ${array.born}</p>
     <p class="card-text"> ${array.died}</p>
@@ -93,7 +93,7 @@ function creatingNephewCard (array) {
     const emptyCard = `<div class="card col-3">
     <img class="card-img-top" src="../images/rsz_james2.jpg" alt="James Warhola">
     <div class="card-body">
-      <h5 class="card-title">Andy's Nephew</h5>
+      <h5 class="card-title"><em><strong>Andy's Nephew</strong></em></h5>
       <p class="card-text"> ${array.name}</p>
       <p class="card-text"> ${array.born}</p>
       <p class="card-text"> ${array.died}</p>
