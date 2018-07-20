@@ -9,6 +9,12 @@ function getLocalStorage(nameTag) {
 // in the developer tools
 getLocalStorage("careerInventory");
 
+// Text for Skills card
+const skillsCard=document.querySelector(".skills-card")
+const skillsCardText=document.createElement("p")
+skillsCardText.textContent="Warhol is most known for being a lead figure in the realm of Pop Art, a movement that incorporated imagery from pop culture, advertising, comic books, and many other forms."
+
+skillsCard.appendChild(skillsCardText)
 
 // Text for Velvet Underground card
 const velvetCard=document.querySelector(".velvet-card")
@@ -56,7 +62,7 @@ thirdCard.appendChild(thirdCardText)
 
 const carnegieCard=document.querySelector(".carnegie-card")
 const carnegieCardText=document.createElement("p")
-carnegieCardText.textContent="Warhol has traveled the world, but he has mainly called New York City his home. He was born on August 6, 1928 in Pittsburgh, Pennsylvania but moved to New York City after receiving his Bachelor of Fine Arts degree in 1949 from Carnegie Institute of Technology."
+carnegieCardText.textContent="Warhol has traveled the world, but he has mainly called New York City his home. He was born on August 6, 1928 in Pittsburgh, Pennsylvania but moved to New York City after receiving his Bachelor of Fine Arts degree in 1949 from Carnegie Institute of Technology. Warhol passed in Manhattan on February 22, 1987 at age 58. Warhol's brothers took his body back to Pittsburgh, where an open-coffin wake was held at the Thomas P. Kunsak Funeral Home. He is buried at Eastern Catholic cemetery in Bethel Park, Pennsylvania."
 
 carnegieCard.appendChild(carnegieCardText)
 
@@ -67,3 +73,7 @@ const adcCardText=document.createElement("p")
 adcCardText.textContent="In 1951, he won his first ADC Award for a CBS record illustration. The work for I. Miller, Harper’s Bazaar, and Noonday Press won him additional ADC awards. The ADC Awards is the oldest continuously running industry award show in the world."
 
 adcCard.appendChild(adcCardText)
+
+function createBackground() {
+    
+}
