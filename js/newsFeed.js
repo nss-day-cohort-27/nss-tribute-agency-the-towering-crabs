@@ -9,9 +9,22 @@ loadDataBase("af-newsFeedInventory");
 
 //////// Populating the page with Data
 
-// const randomBanana () {
+const bananaScript = `<img src="../images/banana.svg.png" alt="warhol bananas" class="bananas">`;
+let randomNumber = Math.floor(Math.random() * 10);
+console.log(randomNumber);
 
-// }
+function getRandomBanana (number) {
+    let emptyString = "";
+    for (let i = 0; i < number; i++) {
+        emptyString += `${bananaScript}`;
+    }
+    return emptyString;
+}
+
+console.log(getRandomBanana(randomNumber));
+
+
+
 
 
 
@@ -39,9 +52,11 @@ function creatingCollabCard (array) {
     return emptyCard
 }
 
-function makingMainCard (function1, function2, function3, array) {
+function makingMainCard (function1, function2, function3, array, number) {
     let emptyMainCard = `
-                        <div class="card-header"><h4>${array.event}</h4></div>
+                        <div class="card-header d-flex"><h4 class="col-6">${array.event}</h4>
+                        <div class="col-6">${getRandomBanana(number)}
+                        </div></div>
                         <div class="card-body main-card-body1 ${array.className}">
                             <div class="card-deck">
                             ${function1}${function2}${function3}</div></div>`;
@@ -52,22 +67,28 @@ function makingMainCard (function1, function2, function3, array) {
 /////////
 
 
-console.log(creatingLocationCard(newsFeedInventory.event[1]));
+// console.log(creatingLocationCard(newsFeedInventory.event[1]));
 
 
 
-console.log(creatingEventTypeCard(newsFeedInventory.event[1]));
-console.log(creatingCollabCard(newsFeedInventory.collaborators[1]));
-console.log(makingMainCard(creatingLocationCard(newsFeedInventory.event[1]), creatingEventTypeCard(newsFeedInventory.event[1]), creatingCollabCard(newsFeedInventory.event[1]), newsFeedInventory.event[1]));
+// console.log(creatingEventTypeCard(newsFeedInventory.event[1]));
+// console.log(creatingCollabCard(newsFeedInventory.collaborators[1]));
+// console.log(makingMainCard(creatingLocationCard(newsFeedInventory.event[1]), creatingEventTypeCard(newsFeedInventory.event[1]), creatingCollabCard(newsFeedInventory.event[1]), newsFeedInventory.event[1]));
 
 const selectCard2 = document.querySelector("#card2");
 const selectCard3 = document.querySelector("#card3");
 const selectCard4 = document.querySelector("#card4");
 
-selectCard2.innerHTML = (makingMainCard(creatingLocationCard(newsFeedInventory.event[1]), creatingEventTypeCard(newsFeedInventory.event[1]), creatingCollabCard(newsFeedInventory.collaborators[1]), newsFeedInventory.event[1]));
+selectCard2.innerHTML = (makingMainCard(creatingLocationCard(newsFeedInventory.event[1]), creatingEventTypeCard(newsFeedInventory.event[1]), creatingCollabCard(newsFeedInventory.collaborators[1]), newsFeedInventory.event[1], randomNumber));
 
-selectCard3.innerHTML = (makingMainCard(creatingLocationCard(newsFeedInventory.event[2]), creatingEventTypeCard(newsFeedInventory.event[2]), creatingCollabCard(newsFeedInventory.collaborators[2]), newsFeedInventory.event[2]));
+randomNumber = Math.floor(Math.random() * 10);
+console.log(randomNumber);
 
-selectCard4.innerHTML = (makingMainCard(creatingLocationCard(newsFeedInventory.event[3]), creatingEventTypeCard(newsFeedInventory.event[3]), creatingCollabCard(newsFeedInventory.collaborators[3]), newsFeedInventory.event[3]));
+selectCard3.innerHTML = (makingMainCard(creatingLocationCard(newsFeedInventory.event[2]), creatingEventTypeCard(newsFeedInventory.event[2]), creatingCollabCard(newsFeedInventory.collaborators[2]), newsFeedInventory.event[2], randomNumber));
+
+randomNumber = Math.floor(Math.random() * 10);
+console.log(randomNumber);
+
+selectCard4.innerHTML = (makingMainCard(creatingLocationCard(newsFeedInventory.event[3]), creatingEventTypeCard(newsFeedInventory.event[3]), creatingCollabCard(newsFeedInventory.collaborators[3]), newsFeedInventory.event[3], randomNumber));
 
 
