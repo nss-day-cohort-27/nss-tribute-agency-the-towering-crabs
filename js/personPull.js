@@ -24,7 +24,7 @@ function creatingMomCard (array) {
 
 function creatingDadCard (array) {
     const emptyCard = `<div class="card col-3">
-    <img class="card-img-top" src="../images/fakedad.JPG" alt="Andrej Warhola">
+    <img class="card-img-top" src="../images/fakedad.jpg" alt="Andrej Warhola">
     <div class="card-body">
       <h5 class="card-title">Andy's Father</h5>
       <p class="card-text"> ${array.name}</p>
