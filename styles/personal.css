@@ -18,6 +18,10 @@ background-image: url('../images/flowersPersonal.jpg');
     background-color:rgba(235, 75, 31, 0.495);
 }
 
+footer{
+   background-color:  rgba(0, 157, 205, 0.406)
+}
+
 .card{
 margin: 4px;
 max-width: 100%;
@@ -36,6 +40,22 @@ justify-items: auto;
 .card-text{
     text-align: justify;
     word-wrap: break-word;
+    font-family: 'Bellefair', serif;
+    font-size: 20px;
+}
+
+.card-title{
+    font-size: 24px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.card-body{
+    background-color: rgba(223, 113, 175, 0.351);
+}
+
+.card.col-3{
+    
+    background-color: rgba(0, 157, 205, 0.351)
 }
 
 
