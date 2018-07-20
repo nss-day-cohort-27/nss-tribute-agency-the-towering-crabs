@@ -1,3 +1,10 @@
+.career-header {
+    text-align: center;
+    font-family: 'Yellowtail', cursive;
+    font-size: 85px;
+    color: #938ac6;
+}
+
 .nav-item {
     padding-left: 10%;
     padding-right: 10%;
@@ -10,6 +17,29 @@
 body {
     padding-left: 1em;
     padding-right: 1em;
+    background-image: url("../images/warhol-flowers.jpg");
+}
+
+.main-container {
+    background-color: rgba(255, 255, 255, 0.699);
+    height: 100%;
+}
+
+.warhol-flowers {
+    opacity: 0.5;
+}
+
+.skills-card {
+    text-align: center;
+    font-family: 'Bellefair', serif; 
+}
+
+.velvet-title, .monroe-title, .mao-title {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.mao-card, .monroe-card, .velvet-card {
+    font-family: 'Bellefair', serif; 
 }
 
 .collab-list {
@@ -18,9 +48,17 @@ body {
     font-size: 15px;
 }
 
+.first-card, .second-card, .third-card {
+    font-family: 'Bellefair', serif;
+}
+
+.lived-text {
+    font-family: 'Bellefair', serif;
+}
+
 h1 {
     padding: .5em;
-    color: #9ce7c2;
+    color: black;
     text-align: center;
     font-weight: bold;
 }
@@ -29,6 +67,7 @@ h1 {
     text-align: center;
     padding: .5em;
     font-weight: bold;
+    color: black;
 }
 
 .flex {
@@ -39,12 +78,35 @@ h1 {
     /* padding-top: .5em; */
     padding-bottom: 1em;
 }
+
+.lived {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+.carnegie-card {
+    text-align: center;
+    font-family: 'Bellefair', serif; 
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
+}
+
+.adc-award {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.ADC-card {
+    font-family: 'Bellefair', serif;
 }
 
 /* Add a hover effect if you want */
