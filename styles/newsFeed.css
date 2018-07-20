@@ -1,11 +1,17 @@
 body {
     background-image: url("../images/flowers-2.jpg");
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav-item {
     padding-left: 10%;
     padding-right: 10%;
 }
+
+#navBar {
+    margin-bottom: 0px;
+}
+
 
 .main-container {
     background-color: rgba(255, 255, 255, 0.699);
@@ -14,11 +20,16 @@ body {
 
 h1{
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-bottom: 20px;
     font-size: 2.7em;
+    padding-top: 10px;
 }
 
+p {
+    font-family: 'Bellefair', serif;
+    /* font-family: 'Cinzel Decorative', cursive; */
+}
 
 #card1, #card2, #card3, #card4 {
     margin: 0px 20px 60px 20px;

@@ -10,7 +10,7 @@ loadDataBase("af-newsFeedInventory");
 //////// Populating the page with Data
 
 const bananaScript = `<img src="../images/banana.svg.png" alt="warhol bananas" class="bananas">`;
-let randomNumber = Math.floor(Math.random() * 10);
+let randomNumber = Math.floor((Math.random() * 9) + 1);
 console.log(randomNumber);
 
 function getRandomBanana (number) {
